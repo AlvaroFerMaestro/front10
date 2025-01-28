@@ -1,0 +1,44 @@
+/* .main-button{
+    background-color: #f9f9f9;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    z-index: 99999999;
+    cursor: pointer;   
+    margin-bottom: 100px;
+} */
+.main-button {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    z-index: 99999999;
+    cursor: pointer;   
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.main-button.loading {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.main-button .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
